@@ -78,7 +78,7 @@ function onFormSubmit(event) {
 function setFormDataFromLocalStorage() {
   const jsonData = localStorage.getItem(LOCAL_STORAGE_KEY);
 
-  if (jsonData !== undefined) {
+  if (jsonData) {
     try {
       data = JSON.parse(jsonData);
 
