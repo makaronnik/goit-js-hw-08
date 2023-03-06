@@ -80,7 +80,7 @@ function setFormDataFromLocalStorage() {
 
   if (jsonData) {
     try {
-      data = JSON.parse(jsonData);
+      const data = JSON.parse(jsonData);
 
       refs.emailInput.value = formData.email = data?.email ?? '';
       refs.messageInput.value = formData.message = data?.message ?? '';
